@@ -1,0 +1,26 @@
+[project]
+name = "MyTools"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "yunhongze", email = "yunhongze@qq.com"},
+]
+dependencies = [
+    "scikit-learn>=1.5.2",
+    "pandas>=2.2.2",
+    "jupyter>=1.1.1",
+    "langchain>=0.2.16",
+    "faiss-cpu>=1.8.0.post1",
+    "qianfan>=0.4.8",
+    "langchain-community>=0.2.16",
+    "redis>=5.0.8",
+    "langchain-core>=0.2.39",
+    "tabulate>=0.9.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
