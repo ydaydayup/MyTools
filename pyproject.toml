@@ -24,3 +24,6 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.uv.workspace]
+members = ["src/python-project"]

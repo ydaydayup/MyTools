@@ -1,0 +1,17 @@
+[project]
+name = "albatross"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["example-lib", "tqdm>=4,<5"]
+
+[tool.uv.sources]
+#example-pkg2 = { workspace = true }
+example-lib = {workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*", "app/example-app",  "app/example-pkg", "example-lib"]
+exclude = ["packages/seeds", "app/app1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
